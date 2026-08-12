@@ -3,220 +3,492 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria Bella Massa</title>
-<style>
-    header{
-        background-color:#DC951B;
-        color: #000000;
-    }
-    main{
-        background-color:#000000;
-        color: #DC951B;
-    }
-</style>
 
+    <title>Clube dos Livros</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<style>
-    header{
-        background-color:#DC951B;
-        color: #000000;
-    }
-    main{
-        background-color:#000000;
-        color: #DC951B;
-    }
-</style>
 
-<header>
-
-    <div class="logo">
-        🍕 Bella Massa
-    </div>
+    <header>
+        <h1>📚 Clube dos Livros</h1>
+        <p>Descubra histórias incríveis e conheça livros famosos!</p>
+    </header>
 
     <nav>
-
         <a href="#inicio">Início</a>
-        <a href="#cardapio">Cardápio</a>
+        <a href="#livros">Livros</a>
         <a href="#sobre">Sobre</a>
-        <a href="#avaliacoes">Avaliações</a>
-        <a href="#contato">Contato</a>
-
     </nav>
 
-</header>
-<style>
-    header{
-        background-color:#DC951B;
-        color: #000000;
-    }
-    main
-      background-color: #DC951B ;
-       color: #000000 ;
-</style>
-<section class="hero" id="inicio">
+    <main>
 
-    <div class="hero-text">
-      <style>
-        header{
-         background-color:#DC951B;
-        color: #000000;    
-        }
-        </style>
-        <h1>A Melhor Pizza da Cidade</h1>
+        <section id="inicio" class="inicio">
+            <h2>Bem-vindo ao mundo dos livros! ✨</h2>
 
-        <p>
-            Massa artesanal, ingredientes frescos e muito sabor.
-        </p>
+            <p>
+                Aqui você encontra alguns dos livros mais conhecidos
+                da literatura mundial.
+            </p>
 
-        <a href="#cardapio" class="botao">
-            Ver Cardápio
-        </a>
+            <button onclick="mostrarMensagem()">
+                📖 Quero conhecer os livros
+            </button>
+        </section>
 
-    </div>
 
-</section>
+        <section id="livros">
 
-<section class="titulo">
+            <h2>⭐ Livros famosos</h2>
 
-    <h2 id="cardapio">Nosso Cardápio</h2>
+            <div class="livros">
 
-</section>
+                <div class="livro roxo">
+                    <div class="capa">⚡<br>Harry Potter</div>
 
-<section class="cards">
+                    <h3>Harry Potter</h3>
 
-<div class="card">
+                    <p>J. K. Rowling</p>
 
-<h3>🍕 Calabresa</h3>
-<style>
-    header{
-        background-color:#DC951B;
-        color: #000000;     
-    }
-</style>
-<p>
-Molho de tomate, queijo mussarela,
-calabresa e cebola.
-</p>
+                    <button onclick="mostrarLivro('Harry Potter')">
+                        Ver livro
+                    </button>
+                </div>
 
-<span>R$ 45,00</span>
 
-<button>Pedir Agora</button>
+                <div class="livro azul">
+                    <div class="capa">🌟<br>O Pequeno Príncipe</div>
 
-</div>
+                    <h3>O Pequeno Príncipe</h3>
 
-<div class="card">
+                    <p>Antoine de Saint-Exupéry</p>
 
-<h3>🍕 Portuguesa</h3>
+                    <button onclick="mostrarLivro('O Pequeno Príncipe')">
+                        Ver livro
+                    </button>
+                </div>
 
-<p>
-Presunto, ovos, cebola,
-mussarela e ervilhas.
-</p>
 
-<span>R$ 50,00</span>
+                <div class="livro vermelho">
+                    <div class="capa">👁️<br>1984</div>
 
-<button>Pedir Agora</button>
+                    <h3>1984</h3>
 
-</div>
+                    <p>George Orwell</p>
 
-<div class="card">
+                    <button onclick="mostrarLivro('1984')">
+                        Ver livro
+                    </button>
+                </div>
 
-<h3>🍕 Frango com Catupiry</h3>
 
-<p>
-Frango desfiado,
-catupiry e mussarela.
-</p>
+                <div class="livro verde">
+                    <div class="capa">❤️<br>Dom Casmurro</div>
 
-<span>R$ 52,00</span>
+                    <h3>Dom Casmurro</h3>
 
-<button>Pedir Agora</button>
+                    <p>Machado de Assis</p>
 
-</div>
+                    <button onclick="mostrarLivro('Dom Casmurro')">
+                        Ver livro
+                    </button>
+                </div>
 
-<div class="card">
 
-<h3>🍕 Marguerita</h3>
+                <div class="livro laranja">
+                    <div class="capa">🧙<br>O Hobbit</div>
 
-<p>
-Tomate,
-manjericão e mussarela.
-</p>
+                    <h3>O Hobbit</h3>
 
-<span>R$ 47,00</span>
+                    <p>J. R. R. Tolkien</p>
 
-<button>Pedir Agora</button>
+                    <button onclick="mostrarLivro('O Hobbit')">
+                        Ver livro
+                    </button>
+                </div>
 
-</div>
 
-<div class="card">
+                <div class="livro rosa">
+                    <div class="capa">🌹<br>Orgulho e Preconceito</div>
 
-<h3>🍕 Quatro Queijos</h3>
+                    <h3>Orgulho e Preconceito</h3>
 
-<p>
-Mussarela,
-provolone,
-parmesão
-e catupiry.
-</p>
+                    <p>Jane Austen</p>
 
-<span>R$ 55,00</span>
+                    <button onclick="mostrarLivro('Orgulho e Preconceito')">
+                        Ver livro
+                    </button>
+                </div>
 
-<button>Pedir Agora</button>
+            </div>
 
-</div>
+        </section>
 
-<div class="card">
 
-<h3>🍕 Pepperoni</h3>
+        <section id="sobre" class="sobre">
 
-<p>
-Pepperoni,
-queijo
-e molho especial.
-</p>
+            <h2>📚 Sobre o site</h2>
 
-<span>R$ 58,00</span>
+            <p>
+                O Clube dos Livros é uma página criada para apresentar
+                livros famosos e incentivar o hábito da leitura.
+            </p>
 
-<button>Pedir Agora</button>
+        </section>
 
-</div>
+    </main>
 
-</section>
 
-<section class="sobre" id="sobre">
-    
+    <footer>
 
-</button>
+        <p>📖 Clube dos Livros - 2026</p>
 
-</form>
+    </footer>
 
-</section>
 
-<footer>
-
-<p>
-    
-</p>
-
-</footer>
-
-<button id="topo">
-
-↑
-
-</button>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #fceabb,
+        #f8b500,
+        #f76b8a
+    );
+
+    color: #333;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: linear-gradient(
+        90deg,
+        #6a11cb,
+        #2575fc
+    );
+
+    color: white;
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* MENU */
+
+nav {
+    background-color: #24123b;
+
+    text-align: center;
+
+    padding: 18px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin: 0 20px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd166;
+
+    font-size: 18px;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    text-align: center;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    margin-bottom: 50px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.inicio h2 {
+    color: #6a11cb;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    margin-bottom: 25px;
+
+    font-size: 18px;
+}
+
+
+/* BOTÕES */
+
+button {
+    background: linear-gradient(
+        90deg,
+        #ff512f,
+        #dd2476
+    );
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* TÍTULO DOS LIVROS */
+
+#livros h2 {
+    text-align: center;
+
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+    text-shadow: 2px 2px 5px #333;
+}
+
+
+/* CARDS */
+
+.livros {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+}
+
+.livro {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+
+    transition: 0.3s;
+}
+
+.livro:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* CAPAS */
+
+.capa {
+    height: 230px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    border-radius: 12px;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+.livro h3 {
+    margin-bottom: 8px;
+
+    font-size: 21px;
+}
+
+.livro p {
+    color: #777;
+
+    margin-bottom: 18px;
+}
+
+
+/* CORES DOS LIVROS */
+
+.roxo .capa {
+    background: linear-gradient(
+        135deg,
+        #7b2ff7,
+        #f107a3
+    );
+}
+
+.azul .capa {
+    background: linear-gradient(
+        135deg,
+        #00c6ff,
+        #0072ff
+    );
+}
+
+.vermelho .capa {
+    background: linear-gradient(
+        135deg,
+        #cb2d3e,
+        #ef473a
+    );
+}
+
+.verde .capa {
+    background: linear-gradient(
+        135deg,
+        #11998e,
+        #38ef7d
+    );
+}
+
+.laranja .capa {
+    background: linear-gradient(
+        135deg,
+        #ff8008,
+        #ffc837
+    );
+}
+
+.rosa .capa {
+    background: linear-gradient(
+        135deg,
+        #ee0979,
+        #ff6a00
+    );
+}
+
+
+/* SOBRE */
+
+.sobre {
+    background-color: white;
+
+    margin-top: 60px;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sobre h2 {
+    color: #6a11cb;
+
+    margin-bottom: 15px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #24123b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .inicio {
+        padding: 25px;
+    }
+
+}
