@@ -8,8 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -25,21 +24,21 @@ header {
 background-color: #542F35;
 color: white;
 text-align: center;
-padding: 40px;
+padding: 45px 20px 35px;
 border-bottom: 6px solid #C19A5B;
 }
 
 header h1 {
-margin: 0;
 font-family: 'Great Vibes', cursive;
-font-size: 60px;
+font-size: 64px;
 font-weight: normal;
+margin: 0;
 }
 
 header p {
 color: #E8C9A8;
 font-size: 17px;
-margin-bottom: 10px;
+margin: 5px 0 10px;
 }
 
 nav {
@@ -51,7 +50,7 @@ padding: 15px;
 nav a {
 color: #F2E6D5;
 text-decoration: none;
-margin: 20px;
+margin: 0 18px;
 font-weight: 600;
 }
 
@@ -60,65 +59,96 @@ color: #D6B36A;
 }
 
 main {
-max-width: 850px;
+max-width: 900px;
 margin: auto;
-padding: 30px 20px;
+padding: 35px 20px;
 }
 
-.boas-vindas {
+.introducao {
 text-align: center;
-padding: 28px;
-margin-bottom: 35px;
+padding: 25px;
+margin-bottom: 40px;
 background-color: #E6D3B8;
 border: 2px solid #C19A5B;
 }
 
-.boas-vindas h2 {
+.introducao h2 {
 font-family: 'Lora', serif;
-color: #542F35;
 font-size: 30px;
+color: #542F35;
+margin-bottom: 10px;
+}
+
+.introducao p {
+max-width: 650px;
+margin: auto;
+}
+
+.linha {
+width: 70px;
+height: 3px;
+background-color: #C19A5B;
+margin: 18px auto;
 }
 
 .post {
 background-color: #FFF9EF;
-padding: 28px;
 margin-bottom: 35px;
+padding: 0 30px 28px;
 border-left: 7px solid #C19A5B;
-box-shadow: 0 3px 8px rgba(74, 48, 40, 0.08);
+box-shadow: 0 4px 10px rgba(74, 48, 40, 0.10);
 }
 
-.post h2 {
+.topo-livro {
+background-color: #542F35;
+color: white;
+margin: 0 -30px 22px;
+padding: 18px 30px;
+}
+
+.topo-livro h2 {
 font-family: 'Lora', serif;
-color: #542F35;
 font-size: 27px;
-margin-top: 0;
+margin: 0;
 }
 
 .categoria {
-color: #9A5B45;
+display: inline-block;
+background-color: #E6D3B8;
+color: #542F35;
+padding: 5px 10px;
+border-radius: 15px;
+font-size: 13px;
 font-weight: 600;
+margin-top: 8px;
 }
 
 .rating {
 color: #B17A25;
-font-size: 19px;
+font-size: 20px;
 font-weight: 600;
+margin-bottom: 15px;
 }
 
 .recomendacao {
 background-color: #F1E0D0;
-padding: 13px;
-border-left: 3px solid #9A5B45;
+padding: 13px 16px;
+border-left: 4px solid #9A5B45;
+margin-top: 20px;
+}
+
+.acoes {
+margin-top: 18px;
 }
 
 button {
 background-color: #F2E6D5;
 color: #542F35;
 border: 1px solid #C19A5B;
-border-radius: 5px;
-padding: 8px 12px;
+border-radius: 20px;
+padding: 8px 15px;
 margin-right: 8px;
-font-size: 15px;
+font-size: 14px;
 cursor: pointer;
 }
 
@@ -126,18 +156,25 @@ button:hover {
 background-color: #E6D3B8;
 }
 
-.separador {
+.sobre {
+background-color: #E6D3B8;
+border: 2px solid #C19A5B;
+padding: 28px;
 text-align: center;
-color: #C19A5B;
-font-size: 22px;
-margin: 25px;
+margin-top: 45px;
+}
+
+.sobre h2 {
+font-family: 'Lora', serif;
+color: #542F35;
 }
 
 footer {
 background-color: #542F35;
 color: #E8C9A8;
 text-align: center;
-padding: 20px;
+padding: 22px;
+margin-top: 45px;
 border-top: 5px solid #C19A5B;
 }
 
@@ -149,7 +186,7 @@ border-top: 5px solid #C19A5B;
 
 <header id="inicio">
 
-<h1>📚 Clube dos Livros</h1>
+<h1>Clube dos Livros</h1>
 
 <p>Descubra histórias incríveis e conheça livros famosos!</p>
 
@@ -165,12 +202,15 @@ border-top: 5px solid #C19A5B;
 
 <main>
 
-<section class="boas-vindas">
+<section class="introducao">
 
 <h2>Bem-vindo ao mundo dos livros! ✨</h2>
 
+<div class="linha"></div>
+
 <p>
-Aqui você encontra alguns dos livros mais conhecidos da literatura mundial.
+Um espaço para conhecer histórias, descobrir novos mundos
+e compartilhar opiniões sobre alguns livros que marcaram a literatura.
 </p>
 
 </section>
@@ -179,62 +219,64 @@ Aqui você encontra alguns dos livros mais conhecidos da literatura mundial.
 
 <article class="post">
 
+<div class="topo-livro">
 <h2>⚡ Harry Potter e a Pedra Filosofal</h2>
+<span class="categoria">Fantasia</span>
+</div>
 
-<p class="categoria">Categoria: Fantasia</p>
-
-<p class="rating">★★★★★ (5/5)</p>
+<p class="rating">★★★★★ 5/5</p>
 
 <p>
 Harry Potter descobre que é um bruxo e começa sua jornada em Hogwarts.
 O livro apresenta um mundo mágico cheio de aventuras, amizades e mistérios.
 </p>
 
-<p class="recomendacao">
-<strong>💡 Por que recomendo:</strong>
+<div class="recomendacao">
+<strong>💡 Minha opinião:</strong>
 Uma ótima escolha para quem gosta de fantasia, aventura e mundos mágicos.
-</p>
+</div>
 
+<div class="acoes">
 <button>❤️ <span>0</span></button>
 <button>👎 <span>0</span></button>
+</div>
 
 </article>
 
-<p class="separador">✦ 📖 ✦</p>
-
 <article class="post">
 
+<div class="topo-livro">
 <h2>🌟 O Pequeno Príncipe</h2>
+<span class="categoria">Fantasia</span>
+</div>
 
-<p class="categoria">Categoria: Fantasia</p>
-
-<p class="rating">★★★★★ (5/5)</p>
+<p class="rating">★★★★★ 5/5</p>
 
 <p>
 Um pequeno príncipe viaja por diferentes planetas e conhece personagens
 que fazem o leitor refletir sobre amizade, sentimentos e a vida.
 </p>
 
-<p class="recomendacao">
-<strong>💡 Por que recomendo:</strong>
-Um livro curto e emocionante, cheio de mensagens que podem ser
-interpretadas de diferentes maneiras.
-</p>
+<div class="recomendacao">
+<strong>💡 Minha opinião:</strong>
+Um livro curto e emocionante, cheio de mensagens e reflexões.
+</div>
 
+<div class="acoes">
 <button>❤️ <span>0</span></button>
 <button>👎 <span>0</span></button>
+</div>
 
 </article>
 
-<p class="separador">✦ 📖 ✦</p>
-
 <article class="post">
 
+<div class="topo-livro">
 <h2>👁️ 1984</h2>
+<span class="categoria">Ficção • Distopia</span>
+</div>
 
-<p class="categoria">Categoria: Ficção / Distopia</p>
-
-<p class="rating">★★★★☆ (4/5)</p>
+<p class="rating">★★★★☆ 4/5</p>
 
 <p>
 A história apresenta uma sociedade controlada por um governo que vigia
@@ -242,52 +284,54 @@ constantemente seus cidadãos. O livro aborda temas como liberdade,
 informação e controle.
 </p>
 
-<p class="recomendacao">
-<strong>💡 Por que recomendo:</strong>
-Para quem gosta de histórias mais sérias e livros que fazem o leitor refletir.
-</p>
+<div class="recomendacao">
+<strong>💡 Minha opinião:</strong>
+Uma leitura interessante para quem gosta de histórias sérias
+e que fazem o leitor pensar.
+</div>
 
+<div class="acoes">
 <button>❤️ <span>0</span></button>
 <button>👎 <span>0</span></button>
+</div>
 
 </article>
 
-<p class="separador">✦ 📖 ✦</p>
-
 <article class="post">
 
+<div class="topo-livro">
 <h2>🪶 Dom Casmurro</h2>
+<span class="categoria">Romance • Clássico</span>
+</div>
 
-<p class="categoria">Categoria: Romance / Clássico</p>
-
-<p class="rating">★★★★☆ (4/5)</p>
+<p class="rating">★★★★☆ 4/5</p>
 
 <p>
 O livro acompanha as memórias de Bentinho e sua relação com Capitu.
-A narrativa apresenta sentimentos, dúvidas e acontecimentos que geram
-diferentes interpretações.
+A narrativa apresenta sentimentos, dúvidas e acontecimentos que
+geram diferentes interpretações.
 </p>
 
-<p class="recomendacao">
-<strong>💡 Por que recomendo:</strong>
-Indicado para quem gosta de clássicos brasileiros e histórias que
-deixam perguntas para o leitor.
-</p>
+<div class="recomendacao">
+<strong>💡 Minha opinião:</strong>
+Um clássico brasileiro que deixa várias perguntas para o leitor.
+</div>
 
+<div class="acoes">
 <button>❤️ <span>0</span></button>
 <button>👎 <span>0</span></button>
+</div>
 
 </article>
 
-<p class="separador">✦ 📖 ✦</p>
-
 <article class="post">
 
+<div class="topo-livro">
 <h2>🏔️ O Hobbit</h2>
+<span class="categoria">Fantasia • Aventura</span>
+</div>
 
-<p class="categoria">Categoria: Fantasia / Aventura</p>
-
-<p class="rating">★★★★★ (5/5)</p>
+<p class="rating">★★★★★ 5/5</p>
 
 <p>
 Bilbo Bolseiro leva uma vida tranquila até receber um convite para
@@ -295,52 +339,53 @@ participar de uma grande aventura. Durante a viagem, ele encontra
 criaturas e lugares fantásticos.
 </p>
 
-<p class="recomendacao">
-<strong>💡 Por que recomendo:</strong>
-Perfeito para quem gosta de aventuras, fantasia e mundos cheios
-de criaturas mágicas.
-</p>
+<div class="recomendacao">
+<strong>💡 Minha opinião:</strong>
+Uma aventura divertida para quem gosta de fantasia e mundos mágicos.
+</div>
 
+<div class="acoes">
 <button>❤️ <span>0</span></button>
 <button>👎 <span>0</span></button>
+</div>
 
 </article>
 
-<p class="separador">✦ 📖 ✦</p>
-
 <article class="post">
 
+<div class="topo-livro">
 <h2>💌 Orgulho e Preconceito</h2>
+<span class="categoria">Romance • Clássico</span>
+</div>
 
-<p class="categoria">Categoria: Romance / Clássico</p>
-
-<p class="rating">★★★★★ (5/5)</p>
+<p class="rating">★★★★★ 5/5</p>
 
 <p>
-Elizabeth Bennet conhece o Sr. Darcy e, ao longo da história, os dois
-precisam lidar com diferenças sociais, opiniões e sentimentos.
+Elizabeth Bennet conhece o Sr. Darcy e, ao longo da história,
+os dois precisam lidar com diferenças sociais, opiniões e sentimentos.
 </p>
 
-<p class="recomendacao">
-<strong>💡 Por que recomendo:</strong>
-Uma ótima opção para quem gosta de romances clássicos,
-personagens marcantes e histórias de época.
-</p>
+<div class="recomendacao">
+<strong>💡 Minha opinião:</strong>
+Uma ótima escolha para quem gosta de romances clássicos e personagens marcantes.
+</div>
 
+<div class="acoes">
 <button>❤️ <span>0</span></button>
 <button>👎 <span>0</span></button>
+</div>
 
 </article>
 
 </section>
 
-<section class="boas-vindas" id="sobre">
+<section class="sobre" id="sobre">
 
 <h2>📖 Sobre o Clube dos Livros</h2>
 
 <p>
-O Clube dos Livros foi criado para compartilhar opiniões, avaliações
-e recomendações de livros de diferentes gêneros.
+O Clube dos Livros foi criado para compartilhar opiniões,
+avaliações e recomendações de livros de diferentes gêneros.
 </p>
 
 </section>
@@ -356,18 +401,18 @@ let botoes = document.querySelectorAll("button");
 
 botoes.forEach(function(botao) {
 
-botao.addEventListener("click", botaoClicado);
+botao.addEventListener("click", function() {
 
-function botaoClicado() {
+let numero = botao.querySelector("span");
 
-let texto = botao.querySelector("span");
+numero.textContent++;
 
-texto.textContent++;
-}
+});
 
 });
 
 </script>
 
 </body>
+
 </html>
